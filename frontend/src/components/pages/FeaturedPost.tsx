@@ -1,6 +1,6 @@
 
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { Link } from "react-router-dom"
+import { Card, CardContent } from "@/components/ui/card"
+
 import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
@@ -41,7 +41,7 @@ export default function FeaturedPosts() {
     <div className="container mx-auto px-4">
       <h2 className="text-3xl font-bold mb-8 text-center">Featured Posts</h2>
       
-      {/* Grid Layout */}
+      
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {featuredPosts.map((post) => (
           <motion.div
